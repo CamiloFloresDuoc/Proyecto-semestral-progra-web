@@ -1,2 +1,5 @@
 # Proyecto-semestral-progra-web
-Proyecto Semestral- Integrantes: Camilo Flores - Marcelo Rodriguez - Bastian Leyton
+Proyecto Semestral- 
+Caso a desarrollar: 
+Integrantes: Camilo Flores - Marcelo Rodriguez - Bastian Leyton
+Lider de equipo: Camilo Flores
