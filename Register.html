@@ -1,16 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Registro</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estiloregister.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <ul class="nav-login">
+                    <li class="nav-item">
+                        <a class="link" href="#">Sobre Caos News</a>
+                    </li>
+                    <li class="nav-item der">
+                        <a class="link" href="index.html">INICIO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--logo-->
+        <div class="row">
+            <div class="col">
+                <img class="logo_full" src="img/l-alargado-3.png" alt="logo">
+                <img class="logo_mobile" src="img/l-alargado-2.png" alt="logo">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-7">
+                <div class="card border-dark">
+                    <div class="card-body">
+                        <div class="card-title notice">Caos News - Colectivo de Noticias</div>
+                        <h5 class="card-subtitle">Al tener tu cuenta podrás contar con:</h5>
+                        <ul class="bene-reg">
+                            <li class="bene-reg-li">Notificaciones al mail sobre las noticias mas
+                                relevantes.</li>
+                            <li class="bene-reg-li">Notificaciones de nuevas noticias de tus periodistas
+                                favoritos.</li>
+                            <li class="bene-reg-li">Podras seleccionar multiples categorias de tu
+                                interes.</li>
+                            <li class="bene-reg-li">Podras votar por las noticias mas relevantes.</li>
+                            
+                        </ul>
+                        <div><img class="login-gira" src="img/l-redondo.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="col-md-5">
+                <div class="card border-dark">
+                    <div class="card-body">
+                        <h5 class="card-title account">CREA TU CUENTA</h5>
+                        <form>
+                            <div class="form-group">
+                                <i class="fas fa-envelope icon"></i>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="@Email" required>
+                            </div>
+                            <div class="form-group">
+                                <i class="fas fa-user-edit icon"></i>
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="NOMBRE" required>
+                            </div>
+                            <div class="form-group">
+                                <i class="fas fa-user-edit icon"></i>
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="APELLIDO">
+                            </div>
+                            <div class="form-group">
+                                <i class="fas fa-user icon"></i>
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="USERNAME" required>
+                            </div>
+                            <div class="form-group">
+                                <i class="fas fa-lock icon"></i>
+                                <input type="password" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="PASSWORD" required minlength="6" maxlength="14">
+                            </div>
+                            <div class="form-group">
+                                <i class="fas fa-lock icon"></i>
+                                <input type="password" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="PASSWORD" required minlength="6" maxlength="14">
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">¿Acepta los terminos?</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">REGISTRAR</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.js"></script>
 </body>
+
 </html>
