@@ -133,11 +133,11 @@ html {
     width: 40%;
     display: block;
     margin: 50px auto;
-    -webkit-animation: spin 3s infinite linear;
+    animation: spin 3s infinite linear;
     
 }
 
-@-webkit-keyframes spin {
+@keyframes spin {
     60% {
         -webkit-transform: rotate(-90deg);
     }
@@ -146,6 +146,7 @@ html {
         -webkit-transform: rotate(90deg);
     }
 }
+
 @media (max-width: 690px) {
     .logo_full {
         display: none;
