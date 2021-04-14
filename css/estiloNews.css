@@ -1,19 +1,48 @@
-*{box-sizing: border-box;}
+*{box-sizing: border-box;} 
 
 body,
 html {
     background-color: rgb(34, 34, 34);
+    color: #fff;
 
 }
 
 .container{
     font-family: sans-serif;
     background-color: white;
-    padding-bottom: 21%;
-    margin: auto;
     padding-top: 20px;
+    padding-bottom: 20%;
+    margin: auto;
 }
 
 img{
     align-items: center;
+}
+
+#carouselExampleCaptions{
+    padding: 2% 0 2% 0;
+}
+
+#banner-video{
+    background-image: url("../img/banner.jpg");
+    background-position: center;
+    padding: 200px 0;
+    position: relative;
+    text-align: center;
+    background-repeat: no-repeat;
+
+}
+
+#banner-video img{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    align-content: center;
+    
+}
+
+#carouselExampleCaptions{
+    background-position: center;
+    padding-left: 2%;
+    padding-right: 2%;
 }
