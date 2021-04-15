@@ -97,3 +97,13 @@ body{
     transition: 0.4s;
     border-radius: 8px;
 }
+
+.footer-txt {
+    font-style: bold;
+    padding-top: 10px;
+    font-size: 15px;
+    margin:auto;
+    color: black;
+    text-align: center;
+  }
+

@@ -19,7 +19,9 @@ html {
         
 }
 #logreg{
-    margin:10px;
+    display: flex;
+    align-items: right;
+    justify-content: flex-end;
     padding-bottom: 10px;
 }
 #mini-nav a{
