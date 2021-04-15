@@ -29,6 +29,14 @@ html {
 #mini-nav a:hover{
     color: red;
 }
+.enlace{
+    background-color: white;
+    color: black;
+}
+.enlace:hover{
+    background-color: black;
+    color: white;
+}
 .title{
     font-weight: bolder;
     text-align: center;
