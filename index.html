@@ -36,7 +36,7 @@
                     <div class="row">
                         <div id="logreg">
                             <div class="col">
-                                <a href="Login.html"><button type="button1" class="btn btn-light">Log in</button></a>
+                                <a href="Login.html"><button type="button1" class="btn btn-outline-primary">Log in</button></a>
                             </div>
                             <div class="col">
                                 <a href="Register.html"><button type="button1"
@@ -130,7 +130,7 @@
                 <div class="card">
                     <div class="tamanonoticia">
                         <img src="img/farkasF.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
+                        <div class="card-body text-center">
                             <h5 class="card-title">Farkas lo pierde todo!</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
@@ -142,7 +142,7 @@
             <div class="col-md-4">
                 <div class="card">
                     <img src="https://picsum.photos/seed/25/300/200" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body text-center">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
@@ -153,7 +153,7 @@
             <div class="col-md-4">
                 <div class="card">
                     <img src="https://picsum.photos/seed/26/300/200" class="card-img-top" alt="...">
-                    <div class="card-body">
+                    <div class="card-body text-center">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
@@ -213,28 +213,28 @@
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Nombre</label>
                             <input type="text" class="form-control" id="exampleFormControlInput1"
-                                placeholder="Nombre Completo">
+                                placeholder="Nombre Completo" required>
                         </div>
                     </div>
                     <div class="col">
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Email</label>
                             <input type="email" class="form-control" id="exampleFormControlInput1"
-                                placeholder="name@example.com">
+                                placeholder="name@example.com" required>
                         </div>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Asunto</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Asunto">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Asunto" required>
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Mensaje</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
-                <div class="form-group">
-                    <input type="submit">
-                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-danger" reset>Limpiar</button>
+
             </form>
         </div>
     </div>
