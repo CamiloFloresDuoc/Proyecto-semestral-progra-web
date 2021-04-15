@@ -43,10 +43,11 @@ body{
 }
 #elnav a:hover{
     color: #fff ;
-    background-color: rgb(85, 84, 84);
+    background-color: rgb(34, 34, 34);
 }
 #indexCateg a{
     color: #000 ;
+    border-radius: 10px;
 }
 #indexCateg a:hover{
     color: #fff ;
@@ -54,4 +55,20 @@ body{
     text-decoration: none;
     padding: 5px;
     border-radius: 2px;
+}
+.tamanonoticia img{
+    width: 100%;
+}
+
+.linkcarruselnoti a{
+    color: #fff;
+    text-decoration: none;
+}
+.linkcarruselnoti:hover{ 
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;   
+}
+.linkcarruselnoti{
+    transition: 0.4s;
+    border-radius: 8px;
 }
