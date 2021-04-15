@@ -23,14 +23,17 @@ img{
     padding: 2% 0 2% 0;
 }
 
-#banner-video{
-    background-image: url("../img/banner.jpg");
-    background-position: center;
-    padding: 200px 0;
-    position: relative;
-    text-align: center;
-    background-repeat: no-repeat;
-
+@media only screen and (max-width: 5000px){
+    #banner-video{
+        background-size: cover;
+        background-image: url("../img/banner.jpg");
+        background-position: center center;
+        background-attachment: fixed;
+        position: relative;
+        text-align: center;
+        background-repeat: no-repeat;
+        padding: 200px 0;
+    }
 }
 
 #banner-video img{
@@ -46,3 +49,5 @@ img{
     padding-left: 2%;
     padding-right: 2%;
 }
+
+
