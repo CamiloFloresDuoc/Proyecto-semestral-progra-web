@@ -207,34 +207,56 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <form class="contacto">
-                <div class="row">
+            <form class="contacto" id="contactForm">
+                <div class="form-row">
                     <div class="col">
                         <div class="form-group">
-                            <label for="exampleFormControlInput1">Nombre</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                            <label for="elnombre">Nombre</label>
+                            <input type="text" class="form-control" id="elNombre"
                                 placeholder="Nombre Completo" required>
+                            <div class="invalid-feedback" id="eNombre"></div> 
                         </div>
                     </div>
                     <div class="col">
                         <div class="form-group">
-                            <label for="exampleFormControlInput1">Email</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                placeholder="name@example.com" required>
+                            <label for="elEmail">Email</label>
+                            <input type="email" class="form-control" id="elEmail"
+                                placeholder="nombre@email.com" required>
+                            <div class="invalid-feedback" id="eMail"></div>
                         </div>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Asunto</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Asunto" required>
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="elAsunto">Asunto</label>
+                            <input type="text" class="form-control" id="elAsunto" placeholder="Asunto" required>
+                            <div class="invalid-feedback" id="eAsunto"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Mensaje</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <div class="form-row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="elMensaje">Mensaje</label>
+                            <textarea class="form-control" id="elMensaje" rows="3"></textarea>
+                            <div class="row">
+                                <div class="col-10">
+                                    <div class="invalid-feedback" id="eMensaje"></div>
+                                </div>
+                                <div class="col-2">
+                                    <small class="form-text text-muted text-right" id="contcaract">0</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-                <button type="reset" class="btn btn-danger" reset>Limpiar</button>
-
+                <div class="form-row">
+                    <div class="col">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="reset" class="btn btn-danger">Limpiar</button>
+                    </div>
+                </div>
             </form>
         </div>
         <div class="row">
@@ -244,13 +266,23 @@
                 </div>
             </div>
         </div>
+<!--footer-->
+        <footer class="row">
+            <div class="col-8">
+              <span><p>Caos news el mejor medio independiente de noticias!</p></span>
+            </div>
+            <div class="col-2">
+              <p>®CaosNews</p>
+            </div>
+        </footer>
     </div>
-   
+    
 
 
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/validacionIndex.js"></script>
 </body>
 
 </html>
