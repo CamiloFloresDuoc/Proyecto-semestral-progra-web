@@ -58,42 +58,43 @@
                 <div class="card border-dark">
                     <div class="card-body">
                         <h5 class="card-title account">CREA TU CUENTA</h5>
-                        <form>
+                        <form action="registrar.php" method="post" class="form-register" onsubmit="validar();">
                             <div class="form-group">
                                 <i class="fas fa-envelope icon"></i>
-                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                <input type="email" class="form-control" id="email"
                                     placeholder="@Email" required>
                             </div>
                             <div class="form-group">
                                 <i class="fas fa-user-edit icon"></i>
-                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                <input type="text" class="form-control" id="nombre"
                                     placeholder="NOMBRE" required>
                             </div>
                             <div class="form-group">
                                 <i class="fas fa-user-edit icon"></i>
-                                <input type="text" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="APELLIDO">
+                                <input type="text" class="form-control" id="apellido"
+                                    placeholder="APELLIDO" required>
                             </div>
                             <div class="form-group">
                                 <i class="fas fa-user icon"></i>
-                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                <input type="text" class="form-control" id="username"
                                     placeholder="USERNAME" required>
                             </div>
                             <div class="form-group">
                                 <i class="fas fa-lock icon"></i>
-                                <input type="password" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="PASSWORD" required minlength="6" maxlength="14">
+                                <input type="password" class="form-control" id="password" onkeyup ="check();"
+                                    placeholder="PASSWORD" required minlength="6" required>
                             </div>
                             <div class="form-group">
                                 <i class="fas fa-lock icon"></i>
-                                <input type="password" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="CONFIRM PASSWORD" required minlength="6" maxlength="14">
+                                <input type="password" class="form-control" id="confirmpassword" onkeyup ="check();"
+                                    placeholder="CONFIRM PASSWORD" required minlength="6" required>
+                                    <span id="message"></span>
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">¿Acepta los terminos?</label>
+                                <input type="checkbox" class="form-check-input" id="checkbox" required>
+                                <label class="form-check-label" for="exampleCheck1" required>¿Acepta los terminos?</label>
                             </div>
-                            <button type="submit" class="btn btn-primary">REGISTRAR</button>
+                            <button type="submit" class="btn btn-primary" id="registrar">REGISTRAR</button>
                         </form>
                     </div>
                 </div>
@@ -103,6 +104,7 @@
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/validacionRegistro.js"></script>
 </body>
 
 </html>
