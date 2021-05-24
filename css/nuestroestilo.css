@@ -115,3 +115,10 @@ footer{
 .espacioApi{
     height: 200px;
 }
+#clima, #moneda {
+    padding-top: 30px;
+}
+
+#ciudad, #temperatura {
+    font-size: 40px;
+}
