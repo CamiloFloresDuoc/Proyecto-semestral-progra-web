@@ -13,7 +13,7 @@
 
 <body>
     <div class="container">
-        <!--Mini btn about-->
+<!--Mini btn about-->
         <div class="row">
             <div id="mini-nav">
                 <ul class="nav">
@@ -26,7 +26,7 @@
                 </ul>
             </div>
         </div>
-        <!--logo-login-search-->
+<!--logo-login-search-->
         <div class="row">
             <div class="col">
                 <img src="img/l-alargado-2.png" alt="">
@@ -56,7 +56,7 @@
                         </div>
                     </div>
                 </div>
-                <!--nav-->
+<!--nav-->
                 <div class="row">
                     <div id="elnav">
                         <ul class="nav justify-content-end">
@@ -74,7 +74,7 @@
                 </div>
             </div>
         </div>
-        <!--carrusel-->
+<!--carrusel-->
         <div class="row">
             <div class="container-fluid p-3">
                 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -121,7 +121,30 @@
                 </div>
             </div>
         </div>
-        <!--Recientes cards-->
+<!--boton de api rest-->
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <div>
+                    <button type="button" class="btn btn-primary" id="apiClima">Clima</button>
+                    <button type="button" class="btn btn-outline-primary" id="apiMoneda">Valor Monedas</button>
+                </div>
+            </div>
+        </div>
+        <!--api monedas-->
+        <div class="row justify-content-center espacioApi pt-2">
+            <div class="col-md-8" id="moneda">
+                <h1 id="nombreMoneda"></h1>
+                <h2 id="valorMoneda"></h2>
+                <hr>
+
+                <select name="" id="monedas">
+                    <option value="0">Selecciona moneda</option>
+                </select>
+                
+                <button class="btn btn-primary inline" id="cambiarMoneda">Ver Valor</button>
+            </div>
+        </div>
+<!--Recientes cards-->
         <div class="titulo-seccion">
             <div class="row">
                 <h1>Noticias Recientes</h1>
@@ -164,7 +187,7 @@
                 </div>
             </div>
         </div>
-        <!--Categorias-->
+<!--Categorias-->
         <div class="titulo-seccion">
             <div id="categoria" class="row">
                 <h1>Categorias</h1>
@@ -202,7 +225,7 @@
             </div>
         </div>
 
-        <!--Contacto-->
+<!--Contacto-->
         <div class="titulo-seccion">
             <div id="contacto" class="row">
                 <h1>Contacto</h1>
@@ -285,6 +308,7 @@
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/validacionFormIndex.js"></script>
+    <script src="js/activacionApis.js"></script>
 </body>
 
 </html>
