@@ -1,0 +1,103 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+
+* {
+    padding: 0;
+    margin: 0;
+  }
+body,
+html {
+    background-color: rgb(34, 34, 34);
+    
+}
+
+.container {
+    width: auto;
+    font-family: sans-serif;
+    background-color: white;
+    padding-top: 10px;
+    margin: auto;
+        
+}
+#logreg{
+    display: flex;
+    align-items: right;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+}
+#mini-nav a{
+    color: #000 ;
+    font-size: 10pt;
+}
+#mini-nav a:hover{
+    color: red;
+}
+.enlace{
+    background-color: white;
+    color: black;
+}
+.enlace:hover{
+    background-color: black;
+    color: white;
+}
+.title{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 45px;
+}
+.subtitle{
+    font-weight: bold;
+    font-size:30px;
+}
+.parrafo{
+    padding-left: 30px;
+}
+.dir-title{
+    font-weight: bold;
+    
+}
+.per-title{
+    font-weight: bold;
+    
+}
+.sub{
+    font-weight: bold;
+    font-style: oblique;
+}
+
+
+.articulo{
+    max-width:100%;
+    display: flex;
+    align-items:left;
+    padding: 30px;
+}
+
+.img-art{
+    max-width: 180px;
+    height: 200px;
+    padding-right: 20px;
+}
+
+.p{
+    padding-left: 10px;
+}
+
+.btn-top{
+    width: 45px;
+   
+    right: 0;
+    position: fixed;
+    z-index: 1;
+    bottom: 0px;
+    animation: spin 3s infinite linear;
+}
+
+@keyframes spin {
+    60% {
+        -webkit-transform: rotate(-90deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(90deg);
+    }
+}
