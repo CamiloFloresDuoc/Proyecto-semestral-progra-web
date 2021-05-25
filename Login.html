@@ -41,15 +41,46 @@
             <h1>Login</h1>
             <div class="textbox">
                 <i class="fas fa-user"></i>
-                <input type="text" placeholder="Username" required>
+                <input id="usuario" type="text" placeholder="Username" required>
             </div>
 
             <div class="textbox">
                 <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Password" required>
+                <input id="password" type="password" placeholder="Password" required>
             </div>
 
-            <a href="index.html"><input type="button" class="btn" value="INGRESAR"></a>
+            <!-- <a href="index.html"><input type="button" class="btn" onclick="validar()" value="INGRESAR"></a> -->
+            <div>
+                <input type="button" class="btn button" onclick="validar()" value="INGRESAR">
+            </div>
+            
+
+            <script>
+                //INTENTOS
+                var intentons = 1;  
+                function validar(){
+                    //VARIABLES
+                    var usuario = $("#usuario").val();
+                    var password = $("#password").val();
+                    //VALIDAMOS INTENTOS
+                    if(intentons <= 3){
+                        if(text == "manuel" && password == "manuel1234"){
+                            swal("Validación", "Bienvenido", "success");
+                            intentons = 1;
+                        }
+                        else{
+                            swal("Validación", "Usuario y/o contraseña invalidos", "error");
+                            intentons++;
+                        }
+                    }
+                    else{
+                        swal("Validación", "Usuario bloqueado por exceso de intentos", "error");
+                    }
+                }
+            </script>    
+
+
+
             <a href="Register.html"><input type="button" class="btn" value="REGISTRO"></a>
         </div>
         <div><img class="login-gira" src="img/l-redondo.png" alt=""></div>
@@ -57,6 +88,7 @@
     <script src="js/jquery-3.6.0.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/validacionLogin.js"></script>
 </body>
 
 </html>
