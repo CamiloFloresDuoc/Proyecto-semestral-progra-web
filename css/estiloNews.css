@@ -3,7 +3,7 @@
 body,
 html {
     background-color: rgb(34, 34, 34);
-    color: #fff;
+    color: #000;
 
 }
 
@@ -49,3 +49,10 @@ img{
     padding-left: 2%;
     padding-right: 2%;
 }
+.fotonoticia {
+    width: 100%;
+}
+.fotonoticia img{
+    width: 100%;
+}
+
