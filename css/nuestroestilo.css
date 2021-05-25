@@ -103,9 +103,9 @@ footer{
     border-radius: 8px;
 }
 
-.footer-txt {
+footer p {
     font-style: bold;
-    padding-top: 10px;
+    padding-top: 25px;
     font-size: 15px;
     margin:auto;
     color:#fff;
@@ -121,4 +121,7 @@ footer{
 
 #ciudad, #temperatura {
     font-size: 40px;
+}
+.espacio{
+    height: 25px;
 }

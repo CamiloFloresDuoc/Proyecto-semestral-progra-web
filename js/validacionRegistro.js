@@ -9,7 +9,7 @@ function validar() {
     
 
     if (email === "" || nombre === "" || apellido === "" || ussername === "" || password === "" || confirmpassword === "") {
-        alert("Todos los cambos son obligatorios");
+        alert("Todos los campos son obligatorios");
         return false;
     } else if (email.length > 100) {
         alert("El correo ingresado es muy largo");

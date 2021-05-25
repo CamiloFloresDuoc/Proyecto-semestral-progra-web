@@ -36,52 +36,37 @@
                 <img class="logo_mobile" src="img/l-alargado-2.png" alt="logo">
             </div>
         </div>
-        <!-- Login Box -->
+<!-- Login Box -->
         <div class="login-box text-center">
             <h1>Login</h1>
-            <div class="textbox">
-                <i class="fas fa-user"></i>
-                <input id="usuario" type="text" placeholder="Username" required>
-            </div>
+            <form class="contacto" id="contactForm">
+                <div class="row textbox">
+                    <div class="col">
+                        <i class="fas fa-user"></i>
+                        <input id="usuario" type="text" class="form-control" placeholder="Nombre Usuario" required>
+                        <br>
+                        <br>
+                        <div class="invalid-feedback" id="eUsuario"></div> 
+                    </div>    
+                </div>
 
-            <div class="textbox">
-                <i class="fas fa-lock"></i>
-                <input id="password" type="password" placeholder="Password" required>
-            </div>
+                <div class="row textbox">
+                    <div class="col">
+                        <i class="fas fa-lock"></i>
+                        <input id="password" class="form-control" type="password" placeholder="Contraseña" required>
+                        <br>
+                        <br>
+                        <div class="invalid-feedback" id="eContrasenna"></div> 
+                    </div>
+                </div>
 
-            <!-- <a href="index.html"><input type="button" class="btn" onclick="validar()" value="INGRESAR"></a> -->
-            <div>
-                <input type="button" class="btn button" onclick="validar()" value="INGRESAR">
-            </div>
-            
+                <!-- <a href="index.html"><input type="button" class="btn" onclick="validar()" value="INGRESAR"></a> -->
+                <div>
+                    <button type="submit" class="btn button">Ingresar</button>
+                </div>  
 
-            <script>
-                //INTENTOS
-                var intentons = 1;  
-                function validar(){
-                    //VARIABLES
-                    var usuario = $("#usuario").val();
-                    var password = $("#password").val();
-                    //VALIDAMOS INTENTOS
-                    if(intentons <= 3){
-                        if(text == "manuel" && password == "manuel1234"){
-                            swal("Validación", "Bienvenido", "success");
-                            intentons = 1;
-                        }
-                        else{
-                            swal("Validación", "Usuario y/o contraseña invalidos", "error");
-                            intentons++;
-                        }
-                    }
-                    else{
-                        swal("Validación", "Usuario bloqueado por exceso de intentos", "error");
-                    }
-                }
-            </script>    
-
-
-
-            <a href="Register.html"><input type="button" class="btn" value="REGISTRO"></a>
+                <a href="Register.html"><input type="button" class="btn" value="REGISTRO"></a>
+            </form>
         </div>
         <div><img class="login-gira" src="img/l-redondo.png" alt=""></div>
     </div>
